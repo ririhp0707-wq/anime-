@@ -1,0 +1,381 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff5f8;
+    color: #393044;
+}
+
+/* HERO HEADER */
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #ffc6d5, #e8c9ff, #c9dcff);
+}
+
+.welcome {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #805d87;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin: 18px 0;
+    color: #493452;
+}
+
+.hero h1 span {
+    color: #a65f9f;
+}
+
+.hero h3 {
+    font-size: 21px;
+    color: #684d70;
+}
+
+.description {
+    font-size: 14px;
+    color: #705c75;
+    margin: 15px 0 30px;
+    line-height: 1.7;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #a66bb1;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #80468e;
+    transform: translateY(-4px);
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #65436d;
+}
+
+.logo span {
+    color: #d47fae;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #69566e;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d47fae;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.content {
+    flex: 3;
+    min-width: 0;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #bc76a8;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    color: #59405f;
+    margin: 12px 0;
+}
+
+.section-title > p:last-child {
+    font-size: 13px;
+    color: #89778c;
+    line-height: 1.7;
+}
+
+/* ANIME CONTAINER */
+.anime-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* ANIME CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #79577b15;
+    border: 1px solid #f2dce9;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px #c99bbd40;
+}
+
+.featured-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.category {
+    color: #c078a8;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 22px;
+    color: #63496a;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #827486;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.read-more {
+    display: inline-block;
+    color: #b66e9e;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.read-more:hover {
+    color: #80468e;
+}
+
+/* SIDEBAR */
+aside {
+    flex: 1;
+    min-width: 220px;
+}
+
+.profile {
+    background: white;
+    padding: 25px 18px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #79577b15;
+    border: 1px solid #f2dce9;
+    position: sticky;
+    top: 20px;
+}
+
+.profile h2 {
+    color: #9d65a6;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e9b5d2;
+}
+
+.profile h3 {
+    color: #604769;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.profile-job {
+    color: #b27ba5;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.profile-line {
+    height: 2px;
+    width: 60px;
+    background: #dfa7ca;
+    margin: 18px auto;
+}
+
+.about-text {
+    color: #89778c;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.profile-info {
+    margin-top: 18px;
+    background: #fff2f8;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.profile-info p {
+    font-size: 12px;
+    color: #91658d;
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #60466c;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer h2 span {
+    color: #ffc3df;
+}
+
+footer > p {
+    font-size: 12px;
+    color: #f0ddeb;
+}
+
+.footer-line {
+    width: 60px;
+    height: 3px;
+    background: #f5b9d8;
+    margin: 20px auto;
+}
+
+footer .copyright {
+    font-size: 11px;
+    color: #e6d4e7;
+}
+
+/* TABLET */
+@media screen and (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .content,
+    aside {
+        width: 100%;
+    }
+
+    .profile {
+        position: static;
+    }
+}
+
+/* MOBILE / HP */
+@media screen and (max-width: 600px) {
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h3 {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .navbar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .anime-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-img {
+        height: 230px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+}
